@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>799829402366-ut6sl6e5mej9rhcafhv2rm71lc19e8q3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.799829402366-ut6sl6e5mej9rhcafhv2rm71lc19e8q3</string>
+	<key>GCM_SENDER_ID</key>
+	<string>799829402366</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.-BoogieSquad.Firebase-Social-Media</string>
+	<key>PROJECT_ID</key>
+	<string>devslopes-social-f2a05</string>
+	<key>STORAGE_BUCKET</key>
+	<string>devslopes-social-f2a05.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:799829402366:ios:e6bed520528cfca6</string>
+	<key>DATABASE_URL</key>
+	<string>https://devslopes-social-f2a05.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		76AAE4E31DAED66A0060CD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4E21DAED66A0060CD32 /* AppDelegate.swift */; };
-		76AAE4E51DAED66A0060CD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4E41DAED66A0060CD32 /* ViewController.swift */; };
+		76AAE4E51DAED66A0060CD32 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4E41DAED66A0060CD32 /* SignInVC.swift */; };
 		76AAE4E81DAED66A0060CD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4E61DAED66A0060CD32 /* Main.storyboard */; };
 		76AAE4EA1DAED66A0060CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4E91DAED66A0060CD32 /* Assets.xcassets */; };
 		76AAE4ED1DAED66A0060CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4EB1DAED66A0060CD32 /* LaunchScreen.storyboard */; };
+		76AAE4F51DAEDB890060CD32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4F41DAEDB890060CD32 /* GoogleService-Info.plist */; };
 		BF73DE91537683DB35ED0524 /* Pods_Firebase_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +20,12 @@
 		5DE16609BA058DC3FEE027D6 /* Pods-Firebase Social Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.debug.xcconfig"; sourceTree = "<group>"; };
 		76AAE4DF1DAED66A0060CD32 /* Firebase Social Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Social Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AAE4E21DAED66A0060CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76AAE4E41DAED66A0060CD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76AAE4E41DAED66A0060CD32 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		76AAE4E71DAED66A0060CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76AAE4E91DAED66A0060CD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76AAE4EC1DAED66A0060CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76AAE4EE1DAED66A0060CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76AAE4F41DAEDB890060CD32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.release.xcconfig"; sourceTree = "<group>"; };
 		C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,14 +72,39 @@
 		76AAE4E11DAED66A0060CD32 /* Firebase Social Media */ = {
 			isa = PBXGroup;
 			children = (
+				76AAE4F81DAEDDE80060CD32 /* Controller */,
+				76AAE4F71DAEDDDE0060CD32 /* View */,
+				76AAE4F61DAEDDD90060CD32 /* Model */,
 				76AAE4E21DAED66A0060CD32 /* AppDelegate.swift */,
-				76AAE4E41DAED66A0060CD32 /* ViewController.swift */,
 				76AAE4E61DAED66A0060CD32 /* Main.storyboard */,
 				76AAE4E91DAED66A0060CD32 /* Assets.xcassets */,
 				76AAE4EB1DAED66A0060CD32 /* LaunchScreen.storyboard */,
 				76AAE4EE1DAED66A0060CD32 /* Info.plist */,
+				76AAE4F41DAEDB890060CD32 /* GoogleService-Info.plist */,
 			);
 			path = "Firebase Social Media";
+			sourceTree = "<group>";
+		};
+		76AAE4F61DAEDDD90060CD32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		76AAE4F71DAEDDDE0060CD32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		76AAE4F81DAEDDE80060CD32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76AAE4E41DAED66A0060CD32 /* SignInVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		A90432D68506B7AC9B11AE18 /* Frameworks */ = {
@@ -154,6 +181,7 @@
 				76AAE4ED1DAED66A0060CD32 /* LaunchScreen.storyboard in Resources */,
 				76AAE4EA1DAED66A0060CD32 /* Assets.xcassets in Resources */,
 				76AAE4E81DAED66A0060CD32 /* Main.storyboard in Resources */,
+				76AAE4F51DAEDB890060CD32 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76AAE4E51DAED66A0060CD32 /* ViewController.swift in Sources */,
+				76AAE4E51DAED66A0060CD32 /* SignInVC.swift in Sources */,
 				76AAE4E31DAED66A0060CD32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
