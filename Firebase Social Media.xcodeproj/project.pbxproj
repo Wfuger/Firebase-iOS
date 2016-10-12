@@ -12,9 +12,11 @@
 		76AAE4E81DAED66A0060CD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4E61DAED66A0060CD32 /* Main.storyboard */; };
 		76AAE4EA1DAED66A0060CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4E91DAED66A0060CD32 /* Assets.xcassets */; };
 		76AAE4ED1DAED66A0060CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4EB1DAED66A0060CD32 /* LaunchScreen.storyboard */; };
+		BF73DE91537683DB35ED0524 /* Pods_Firebase_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DE16609BA058DC3FEE027D6 /* Pods-Firebase Social Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.debug.xcconfig"; sourceTree = "<group>"; };
 		76AAE4DF1DAED66A0060CD32 /* Firebase Social Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Social Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AAE4E21DAED66A0060CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76AAE4E41DAED66A0060CD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		76AAE4E91DAED66A0060CD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76AAE4EC1DAED66A0060CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76AAE4EE1DAED66A0060CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.release.xcconfig"; sourceTree = "<group>"; };
+		C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF73DE91537683DB35ED0524 /* Pods_Firebase_Social_Media.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101474F86EA64FE4D51C5C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16609BA058DC3FEE027D6 /* Pods-Firebase Social Media.debug.xcconfig */,
+				80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76AAE4D61DAED66A0060CD32 = {
 			isa = PBXGroup;
 			children = (
 				76AAE4E11DAED66A0060CD32 /* Firebase Social Media */,
 				76AAE4E01DAED66A0060CD32 /* Products */,
+				101474F86EA64FE4D51C5C80 /* Pods */,
+				A90432D68506B7AC9B11AE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "Firebase Social Media";
 			sourceTree = "<group>";
 		};
+		A90432D68506B7AC9B11AE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76AAE4F11DAED66A0060CD32 /* Build configuration list for PBXNativeTarget "Firebase Social Media" */;
 			buildPhases = (
+				4BCB3EA4DDAACCE61654AF08 /* [CP] Check Pods Manifest.lock */,
 				76AAE4DB1DAED66A0060CD32 /* Sources */,
 				76AAE4DC1DAED66A0060CD32 /* Frameworks */,
 				76AAE4DD1DAED66A0060CD32 /* Resources */,
+				5FFA544CEC8C0CAA80B8334E /* [CP] Embed Pods Frameworks */,
+				3E4A4151660C5A5979480B6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E4A4151660C5A5979480B6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCB3EA4DDAACCE61654AF08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FFA544CEC8C0CAA80B8334E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76AAE4DB1DAED66A0060CD32 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		76AAE4F21DAED66A0060CD32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE16609BA058DC3FEE027D6 /* Pods-Firebase Social Media.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G57AD7E667;
@@ -272,6 +348,7 @@
 		};
 		76AAE4F31DAED66A0060CD32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G57AD7E667;
@@ -302,6 +379,7 @@
 				76AAE4F31DAED66A0060CD32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
