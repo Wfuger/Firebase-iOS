@@ -13,6 +13,11 @@
 		76AAE4EA1DAED66A0060CD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4E91DAED66A0060CD32 /* Assets.xcassets */; };
 		76AAE4ED1DAED66A0060CD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4EB1DAED66A0060CD32 /* LaunchScreen.storyboard */; };
 		76AAE4F51DAEDB890060CD32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76AAE4F41DAEDB890060CD32 /* GoogleService-Info.plist */; };
+		76AAE4FA1DAEF2AB0060CD32 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4F91DAEF2AB0060CD32 /* CustomView.swift */; };
+		76AAE4FD1DAEF3390060CD32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4FC1DAEF3390060CD32 /* Constants.swift */; };
+		76AAE4FF1DAEF4FF0060CD32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE4FE1DAEF4FF0060CD32 /* RoundButton.swift */; };
+		76AAE5011DAEF6D20060CD32 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE5001DAEF6D20060CD32 /* CustomTextField.swift */; };
+		76AAE5031DAEF82C0060CD32 /* CustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE5021DAEF82C0060CD32 /* CustomBtn.swift */; };
 		BF73DE91537683DB35ED0524 /* Pods_Firebase_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		76AAE4EC1DAED66A0060CD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76AAE4EE1DAED66A0060CD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76AAE4F41DAEDB890060CD32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		76AAE4F91DAEF2AB0060CD32 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		76AAE4FC1DAEF3390060CD32 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76AAE4FE1DAEF4FF0060CD32 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		76AAE5001DAEF6D20060CD32 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		76AAE5021DAEF82C0060CD32 /* CustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBtn.swift; sourceTree = "<group>"; };
 		80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.release.xcconfig"; sourceTree = "<group>"; };
 		C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +82,7 @@
 		76AAE4E11DAED66A0060CD32 /* Firebase Social Media */ = {
 			isa = PBXGroup;
 			children = (
+				76AAE4FB1DAEF3290060CD32 /* Util */,
 				76AAE4F81DAEDDE80060CD32 /* Controller */,
 				76AAE4F71DAEDDDE0060CD32 /* View */,
 				76AAE4F61DAEDDD90060CD32 /* Model */,
@@ -95,6 +106,10 @@
 			children = (
 				76AAE4E61DAED66A0060CD32 /* Main.storyboard */,
 				76AAE4EB1DAED66A0060CD32 /* LaunchScreen.storyboard */,
+				76AAE4F91DAEF2AB0060CD32 /* CustomView.swift */,
+				76AAE4FE1DAEF4FF0060CD32 /* RoundButton.swift */,
+				76AAE5001DAEF6D20060CD32 /* CustomTextField.swift */,
+				76AAE5021DAEF82C0060CD32 /* CustomBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -105,6 +120,14 @@
 				76AAE4E41DAED66A0060CD32 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		76AAE4FB1DAEF3290060CD32 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				76AAE4FC1DAEF3390060CD32 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		A90432D68506B7AC9B11AE18 /* Frameworks */ = {
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AAE4FA1DAEF2AB0060CD32 /* CustomView.swift in Sources */,
+				76AAE4FF1DAEF4FF0060CD32 /* RoundButton.swift in Sources */,
+				76AAE5011DAEF6D20060CD32 /* CustomTextField.swift in Sources */,
+				76AAE5031DAEF82C0060CD32 /* CustomBtn.swift in Sources */,
 				76AAE4E51DAED66A0060CD32 /* SignInVC.swift in Sources */,
 				76AAE4E31DAED66A0060CD32 /* AppDelegate.swift in Sources */,
+				76AAE4FD1DAEF3390060CD32 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
