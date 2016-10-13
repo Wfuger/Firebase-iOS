@@ -198,14 +198,14 @@
                                     <constraint firstAttribute="trailing" secondItem="8AD-rY-2ga" secondAttribute="trailing" constant="8" id="sg5-kR-XGR"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="372" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Psh-gS-skn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="358" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Psh-gS-skn">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="372" id="rtS-a2-6sd">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="372"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="rtS-a2-6sd" customClass="PostCell" customModule="Firebase_Social_Media" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="358"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rtS-a2-6sd" id="dKr-Uc-ze0">
-                                            <frame key="frameInset" width="375" height="371"/>
+                                            <frame key="frameInset" width="375" height="358"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lK3-2O-Cj0" customClass="CustomView" customModule="Firebase_Social_Media" customModuleProvider="target">
@@ -214,7 +214,7 @@
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzJ-rK-Hej">
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="4kn-Tu-j2w">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="4kn-Tu-j2w" customClass="CircleImage" customModule="Firebase_Social_Media" customModuleProvider="target">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="3wp-7a-2qm"/>
                                                                                 <constraint firstAttribute="height" constant="60" id="v7L-L8-grp"/>
@@ -236,6 +236,9 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tJ1-gy-wHw"/>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d6k-ac-0TG">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="oZJ-fk-cWn"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -246,12 +249,12 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ps-JR-syf">
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                    <color key="textColor" white="0.0" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcJ-qN-mWe">
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                    <color key="textColor" white="0.0" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -268,6 +271,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.81176470590000005" green="0.85882352939999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="lK3-2O-Cj0" firstAttribute="leading" secondItem="dKr-Uc-ze0" secondAttribute="leading" constant="16" id="5DG-Sb-GPG"/>
                                                 <constraint firstItem="lK3-2O-Cj0" firstAttribute="top" secondItem="dKr-Uc-ze0" secondAttribute="top" constant="8" id="WBD-gi-7w3"/>
@@ -275,13 +279,20 @@
                                                 <constraint firstAttribute="bottom" secondItem="lK3-2O-Cj0" secondAttribute="bottom" constant="8" id="vMv-Ab-l9x"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="d6k-ac-0TG" id="IgD-9i-WDn"/>
+                                            <outlet property="editingAccessoryView" destination="DcJ-qN-mWe" id="EfA-Lf-lfG"/>
+                                            <outlet property="postImg" destination="tJ1-gy-wHw" id="2f4-kn-Chc"/>
+                                            <outlet property="profileImg" destination="4kn-Tu-j2w" id="ugJ-a6-N5M"/>
+                                            <outlet property="usernameLbl" destination="MDE-Jc-ndA" id="KlC-WF-Ryc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470588235294" green="0.85882352941176465" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Psh-gS-skn" firstAttribute="top" secondItem="RTJ-0x-wc8" secondAttribute="bottom" constant="16" id="4Qd-YG-0N6"/>
+                            <constraint firstItem="Psh-gS-skn" firstAttribute="top" secondItem="RTJ-0x-wc8" secondAttribute="bottom" constant="8" id="4Qd-YG-0N6"/>
                             <constraint firstItem="Pl7-Jg-mn2" firstAttribute="top" secondItem="Psh-gS-skn" secondAttribute="bottom" id="6CV-1G-Eix"/>
                             <constraint firstItem="Psh-gS-skn" firstAttribute="leading" secondItem="raE-8i-M4o" secondAttribute="leading" id="DCF-uJ-CtR"/>
                             <constraint firstAttribute="trailing" secondItem="RTJ-0x-wc8" secondAttribute="trailing" constant="16" id="Faa-8N-k6i"/>
@@ -293,6 +304,9 @@
                             <constraint firstItem="RTJ-0x-wc8" firstAttribute="top" secondItem="w0X-PQ-voY" secondAttribute="bottom" constant="16" id="wlV-fs-Yu3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Psh-gS-skn" id="J8C-NO-iTD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBy-Ip-mNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
