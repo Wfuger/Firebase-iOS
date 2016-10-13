@@ -36,6 +36,7 @@
 		76AAE4FE1DAEF4FF0060CD32 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		76AAE5001DAEF6D20060CD32 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		76AAE5021DAEF82C0060CD32 /* CustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBtn.swift; sourceTree = "<group>"; };
+		76AAE5041DAF35C60060CD32 /* Firebase Social Media.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Firebase Social Media.entitlements"; sourceTree = "<group>"; };
 		80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.release.xcconfig"; sourceTree = "<group>"; };
 		C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +83,7 @@
 		76AAE4E11DAED66A0060CD32 /* Firebase Social Media */ = {
 			isa = PBXGroup;
 			children = (
+				76AAE5041DAF35C60060CD32 /* Firebase Social Media.entitlements */,
 				76AAE4FB1DAEF3290060CD32 /* Util */,
 				76AAE4F81DAEDDE80060CD32 /* Controller */,
 				76AAE4F71DAEDDDE0060CD32 /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = G57AD7E667;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -393,6 +400,7 @@
 			baseConfigurationReference = 5DE16609BA058DC3FEE027D6 /* Pods-Firebase Social Media.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Firebase Social Media/Firebase Social Media.entitlements";
 				DEVELOPMENT_TEAM = G57AD7E667;
 				INFOPLIST_FILE = "Firebase Social Media/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +415,7 @@
 			baseConfigurationReference = 80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Firebase Social Media/Firebase Social Media.entitlements";
 				DEVELOPMENT_TEAM = G57AD7E667;
 				INFOPLIST_FILE = "Firebase Social Media/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

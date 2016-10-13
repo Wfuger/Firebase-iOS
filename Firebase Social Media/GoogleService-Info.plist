@@ -8,6 +8,8 @@
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
 	<string>799829402366-ut6sl6e5mej9rhcafhv2rm71lc19e8q3.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfvL2FQbbdVPnRUXRrdF-6qfXw0YVT1w0</string>
 	<key>REVERSED_CLIENT_ID</key>
 	<string>com.googleusercontent.apps.799829402366-ut6sl6e5mej9rhcafhv2rm71lc19e8q3</string>
 	<key>GCM_SENDER_ID</key>
