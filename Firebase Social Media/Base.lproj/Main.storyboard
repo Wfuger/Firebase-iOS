@@ -76,7 +76,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2J-Nq-c6z" customClass="CustomTextField" customModule="Firebase_Social_Media" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-Lg-Hx0" customClass="CustomBtn" customModule="Firebase_Social_Media" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.89856499433517456" green="0.37445706129074097" blue="0.19419080018997192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,6 +84,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkB-Dp-8LH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -107,6 +110,10 @@
                             <constraint firstAttribute="trailing" secondItem="Rzk-qk-5Sh" secondAttribute="trailing" id="q60-BY-I3v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="qFd-E7-E9q" id="qJH-s1-eSf"/>
+                        <outlet property="passwordTextField" destination="D2J-Nq-c6z" id="eaZ-ho-MA8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
