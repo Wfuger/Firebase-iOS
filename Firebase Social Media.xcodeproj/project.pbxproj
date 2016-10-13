@@ -21,6 +21,7 @@
 		76AAE5061DAF620E0060CD32 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE5051DAF620E0060CD32 /* FeedVC.swift */; };
 		76AAE5081DB013500060CD32 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE5071DB013500060CD32 /* CircleImage.swift */; };
 		76AAE50A1DB0248D0060CD32 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE5091DB0248D0060CD32 /* PostCell.swift */; };
+		76AAE50D1DB030120060CD32 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAE50C1DB030120060CD32 /* DataService.swift */; };
 		BF73DE91537683DB35ED0524 /* Pods_Firebase_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		76AAE5051DAF620E0060CD32 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		76AAE5071DB013500060CD32 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		76AAE5091DB0248D0060CD32 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		76AAE50C1DB030120060CD32 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		80084C04BD7D0C120EBB9587 /* Pods-Firebase Social Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Social Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Social Media/Pods-Firebase Social Media.release.xcconfig"; sourceTree = "<group>"; };
 		C7956331EB05F0C59D372D0E /* Pods_Firebase_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		76AAE4E11DAED66A0060CD32 /* Firebase Social Media */ = {
 			isa = PBXGroup;
 			children = (
+				76AAE50B1DB02FFC0060CD32 /* Services */,
 				76AAE5041DAF35C60060CD32 /* Firebase Social Media.entitlements */,
 				76AAE4FB1DAEF3290060CD32 /* Util */,
 				76AAE4F81DAEDDE80060CD32 /* Controller */,
@@ -139,6 +142,14 @@
 				76AAE4FC1DAEF3390060CD32 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		76AAE50B1DB02FFC0060CD32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76AAE50C1DB030120060CD32 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		A90432D68506B7AC9B11AE18 /* Frameworks */ = {
@@ -284,6 +295,7 @@
 				76AAE5011DAEF6D20060CD32 /* CustomTextField.swift in Sources */,
 				76AAE5031DAEF82C0060CD32 /* CustomBtn.swift in Sources */,
 				76AAE5061DAF620E0060CD32 /* FeedVC.swift in Sources */,
+				76AAE50D1DB030120060CD32 /* DataService.swift in Sources */,
 				76AAE5081DB013500060CD32 /* CircleImage.swift in Sources */,
 				76AAE4E51DAED66A0060CD32 /* SignInVC.swift in Sources */,
 				76AAE4E31DAED66A0060CD32 /* AppDelegate.swift in Sources */,
