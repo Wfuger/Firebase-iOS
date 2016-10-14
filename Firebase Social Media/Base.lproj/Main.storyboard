@@ -286,6 +286,7 @@
                                         <connections>
                                             <outlet property="caption" destination="d6k-ac-0TG" id="IgD-9i-WDn"/>
                                             <outlet property="editingAccessoryView" destination="DcJ-qN-mWe" id="EfA-Lf-lfG"/>
+                                            <outlet property="likesLbl" destination="DcJ-qN-mWe" id="hhD-Eh-v46"/>
                                             <outlet property="postImg" destination="tJ1-gy-wHw" id="2f4-kn-Chc"/>
                                             <outlet property="profileImg" destination="4kn-Tu-j2w" id="ugJ-a6-N5M"/>
                                             <outlet property="usernameLbl" destination="MDE-Jc-ndA" id="KlC-WF-Ryc"/>

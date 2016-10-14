@@ -16,11 +16,27 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
 
+    var post: Post!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    func configureCell(post: Post) {
+        self.post = post
+        self.caption.text = post.caption
+        self.likesLbl.text = String(post.likes)
+        
+        print("WILL: Image URL from Firebase \(post.imageUrl)")
+        if let url = URL(string: post.imageUrl) {
+            if let imageData = try? Data(contentsOf: url) {
+                print("WILL: GOT Inside the image data")
+                let img = UIImage(data: imageData)
+                self.postImg.image = img
+            }
+        }
+        
+    }
     
 
 }
