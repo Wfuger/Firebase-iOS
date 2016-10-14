@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PostCell: UITableViewCell {
 
@@ -22,18 +23,31 @@ class PostCell: UITableViewCell {
         // Initialization code
     }
 
-    func configureCell(post: Post) {
+    func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
         self.caption.text = post.caption
         self.likesLbl.text = String(post.likes)
         
         print("WILL: Image URL from Firebase \(post.imageUrl)")
-        if let url = URL(string: post.imageUrl) {
-            if let imageData = try? Data(contentsOf: url) {
-                print("WILL: GOT Inside the image data")
-                let img = UIImage(data: imageData)
-                self.postImg.image = img
-            }
+        
+        if let img = img {
+            self.postImg.image = img
+        } else {
+            
+            let ref = FIRStorage.storage().reference(forURL: post.imageUrl)
+            ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+                if let error = error {
+                    print("WILL: Unable to download image from Firebase storage \(error)")
+                } else {
+                    print("WILL: Image downloaded from firebase storage")
+                    if let imgData = data {
+                        if let img = UIImage(data: imgData) {
+                            self.postImg.image = img
+                            FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl as NSString)
+                        }
+                    }
+                }
+            })
         }
         
     }
