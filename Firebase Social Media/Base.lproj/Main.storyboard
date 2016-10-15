@@ -194,6 +194,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="fw5-Vl-P6k"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnPressed:" destination="4GH-ti-axb" eventType="touchUpInside" id="7rE-kx-eiQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -255,16 +258,17 @@
                                                                 </textView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QXF-pZ-gdl">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QXF-pZ-gdl">
+                                                            <frame key="frameInset" minX="246" minY="313" width="79" height="21"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ps-JR-syf">
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                                     <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcJ-qN-mWe">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJg-yz-5iZ">
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                    <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -291,8 +295,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="d6k-ac-0TG" id="IgD-9i-WDn"/>
-                                            <outlet property="editingAccessoryView" destination="DcJ-qN-mWe" id="EfA-Lf-lfG"/>
-                                            <outlet property="likesLbl" destination="DcJ-qN-mWe" id="hhD-Eh-v46"/>
+                                            <outlet property="likeImg" destination="jff-gQ-tam" id="nZ4-zk-2oe"/>
+                                            <outlet property="likesLbl" destination="lJg-yz-5iZ" id="6ZA-fj-MJo"/>
                                             <outlet property="postImg" destination="tJ1-gy-wHw" id="2f4-kn-Chc"/>
                                             <outlet property="profileImg" destination="4kn-Tu-j2w" id="ugJ-a6-N5M"/>
                                             <outlet property="usernameLbl" destination="MDE-Jc-ndA" id="KlC-WF-Ryc"/>
@@ -316,6 +320,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionTextField" destination="AWs-pD-bUE" id="cyR-Cr-lhJ"/>
                         <outlet property="imageToAdd" destination="YSJ-eJ-Oz5" id="Sr3-j7-iYh"/>
                         <outlet property="tableView" destination="Psh-gS-skn" id="J8C-NO-iTD"/>
                     </connections>

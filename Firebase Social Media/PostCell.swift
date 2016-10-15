@@ -16,24 +16,30 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
+    @IBOutlet weak var likeImg: UIImageView!
 
     var post: Post!
+    var likesRef: FIRDatabaseReference!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        tap.numberOfTapsRequired = 1
+        likeImg.addGestureRecognizer(tap)
+        likeImg.isUserInteractionEnabled = true
     }
 
     func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
         self.caption.text = post.caption
-        self.likesLbl.text = String(post.likes)
-        
-        print("WILL: Image URL from Firebase \(post.imageUrl)")
+        self.likesLbl.text = "\(post.likes)"
+
         
         if let img = img {
             self.postImg.image = img
         } else {
-            
+            likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
             let ref = FIRStorage.storage().reference(forURL: post.imageUrl)
             ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
                 if let error = error {
@@ -49,7 +55,29 @@ class PostCell: UITableViewCell {
                 }
             })
         }
+        likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
+        likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.likeImg.image = #imageLiteral(resourceName: "empty-heart")
+            } else {
+                self.likeImg.image = #imageLiteral(resourceName: "filled-heart")
+            }
+        })
         
+    }
+    func likeTapped(sender: UITapGestureRecognizer) {
+        
+        likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.likeImg.image = #imageLiteral(resourceName: "filled-heart")
+                self.post.adjustLikes(addLike: true)
+                self.likesRef.setValue(true)
+            } else {
+                self.likeImg.image = #imageLiteral(resourceName: "empty-heart")
+                self.post.adjustLikes(addLike: false)
+                self.likesRef.removeValue()
+            }
+        })
     }
     
 
